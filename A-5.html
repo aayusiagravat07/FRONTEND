@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            n = parseInt(prompt("enter the number:"));
+            temp = n;
+            dig=0;
+            while(n!=0){
+            rem = n%10;
+            dig= dig*10 + rem;
+           n = Math.floor(n/10);
+            }
+            if( dig == temp ){
+              document .write("palindrom number");
+            }
+            else {
+                document.write("not palindrom number");
+            }
+        </script>
+    </body>
+</html>

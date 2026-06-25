@@ -1,0 +1,40 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        a = parseInt(prompt("enter the number 1:"));
+        b = parseInt(prompt("enter the number 2: "));
+        choice = prompt("'1.+','2.-','3.*','4./'");
+        switch (choice) {
+            case "+":
+                ans = a + b;
+                document.write(ans);
+                break;
+            case "-":
+                ans = a - b;
+                document.write(ans);
+                break;
+            case "*":
+                ans = a * b;
+                document.write(ans);
+                break;
+            case "/":
+                if (b == 0) {
+
+                    document.write("not possible");
+                }
+                else {
+                    ans = a / b;
+                    document.write(ans);
+                }
+                break;
+
+        }
+
+    </script>
+</body>
+
+</html>

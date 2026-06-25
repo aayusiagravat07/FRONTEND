@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            n=parseInt(prompt("enter number"));
+	
+	var temp,sum=0,mod;
+	temp=n
+	while(n!=0)
+	{
+		mod=n%10;
+		sum=sum+mod*mod*mod;
+		n=parseInt(n/10);
+	}
+	if(temp==sum)
+	{
+		document.write("it's armstrong number");
+	}
+
+	else
+	{
+		document.write("it's not armstrong number");
+	}
+        </script>
+    </body>
+</html>
