@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    arr = [
+            { pName : "Mobile",
+                price : 17000
+                },
+            {
+              pName : "Laptop",
+                price : 37000  
+            },
+             {
+                pName : "TV",
+                price : 50000
+            },
+             
+        ];
+        document.write("<table>");
+        document.write("<thead>");
+        document.write(`
+        <th> pName </th>
+        <th> price </th>
+        
+        `);
+        document.write("</thead>");
+        document.write("<tbody>");
+        for (i = 0; i < arr.length; i++) {
+            document.write(`<tr>
+                <td>${arr[i].pName}</td>
+                 <td>${arr[i].price}</td>
+                </tr>`);
+        }
+        document.write("</tbody>");
+        document.write("</table>")
+    </script>
+</body>
+</html>
